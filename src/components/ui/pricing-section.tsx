@@ -8,26 +8,26 @@ interface PricingSectionProps {
 
 export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
   return (
-    <section id="oferta" className="py-24 bg-black">
-      <div className="container mx-auto px-6">
+    <section id="oferta" className="py-16 sm:py-24 bg-black overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Professional Title */}
-          <div className="mb-16">
+          <div className="mb-12 sm:mb-16">
             <div className="inline-block mb-4">
-              <span className="text-primary font-medium text-sm uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full">
+              <span className="text-primary font-medium text-xs sm:text-sm uppercase tracking-wider bg-primary/10 px-3 sm:px-4 py-2 rounded-full">
                 Oferta Exclusiva
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-4">
               Comece sua jornada hoje
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-4">
               Transforme o sonho americano em realidade com nossa plataforma completa
             </p>
           </div>
-          
+
           {/* Clean Pricing Card */}
-          <div className="bg-gray-900 border-2 border-gray-700 rounded-2xl p-12 shadow-lg relative max-w-3xl mx-auto">
+          <div className="bg-gray-900 border-2 border-gray-700 rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg relative max-w-3xl mx-auto">
             
             {/* 60% OFF Tag */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -37,16 +37,16 @@ export const PricingSection = ({ onCTAClick }: PricingSectionProps) => {
             </div>
 
             {/* Price Section */}
-            <div className="text-center mb-12">
+            <div className="text-center mb-8 sm:mb-12">
               <div className="mb-4">
-                <span className="text-lg text-gray-400 line-through">De R$ 1.997</span>
+                <span className="text-base sm:text-lg text-gray-400 line-through">De R$ 1.997</span>
               </div>
               <div className="relative inline-block">
-                <div className="text-6xl lg:text-7xl font-bold text-white mb-2">
+                <div className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-2">
                   12x R$ 66,42
                 </div>
               </div>
-              <p className="text-lg text-gray-300 mt-2">ou à vista por R$ 797</p>
+              <p className="text-base sm:text-lg text-gray-300 mt-2">ou à vista por R$ 797</p>
             </div>
             
             {/* Cupom Warning */}

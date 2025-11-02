@@ -57,8 +57,8 @@ export const CarouselSection = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-black">
-      <div className="container mx-auto px-6">
+    <section className="py-16 bg-black overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Um pouco do que você encontra dentro da Viva Academy!
@@ -68,18 +68,18 @@ export const CarouselSection = () => {
           </p>
         </div>
 
-        <div className="relative w-full px-12 sm:px-16">
+        <div className="relative w-full px-8 sm:px-12 md:px-16">
           <div className="overflow-hidden">
-            <div 
-              className={`flex gap-4 ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
-              style={{ transform: `translateX(-${currentIndex * 316}px)` }}
+            <div
+              className={`flex gap-2 sm:gap-4 ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
+              style={{ transform: `translateX(calc(-${currentIndex} * (200px + 0.5rem)))` }}
             >
               {duplicatedImages.map((image, index) => (
                 <div key={index} className="flex-shrink-0">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-[300px] h-[579px] object-cover"
+                    className="w-[200px] sm:w-[250px] md:w-[300px] h-auto object-cover rounded-lg"
                   />
                 </div>
               ))}

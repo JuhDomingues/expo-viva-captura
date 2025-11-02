@@ -28,39 +28,39 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
            style={{ backgroundImage: `url(${cidadeImage})` }}></div>
-      
+
       {/* Professional overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50"></div>
-      
+
       {/* Content Grid */}
-      <div className="relative z-10 container mx-auto px-6 pt-20 lg:pt-0 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 lg:pt-0 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Left Side - Text Content */}
         <div className="text-white">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-white">
             Sua família pronta para viver nos EUA com{" "}
             <span className="text-primary">segurança e qualidade</span>
           </h1>
-          
-          <p className="text-lg lg:text-xl mb-8 text-gray-300 leading-relaxed max-w-lg font-medium">
-            Da escolha da melhor escola e moradia até o passo a passo da imigração: 
-            a <strong className="text-white">Viva Academy</strong> é a sua bússola para transformar o sonho americano em um 
+
+          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-gray-300 leading-relaxed max-w-lg font-medium">
+            Da escolha da melhor escola e moradia até o passo a passo da imigração:
+            a <strong className="text-white">Viva Academy</strong> é a sua bússola para transformar o sonho americano em um
             projeto real e estruturado de vida.
           </p>
           
-          <Button 
+          <Button
             onClick={() => {
               // Track Facebook Pixel event
               trackPixelEvent(FacebookPixelEvents.LEAD, {
                 content_name: 'Hero CTA Click',
                 source: 'hero_section'
               });
-              
+
               const ofertaSection = document.getElementById('oferta');
               if (ofertaSection) {
                 ofertaSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg px-10 py-4 rounded-lg shadow-lg transition-all"
+            className="bg-primary hover:bg-primary/90 text-white font-semibold text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-lg shadow-lg transition-all w-full sm:w-auto"
           >
             Começar meu plano de vida nos EUA
           </Button>
