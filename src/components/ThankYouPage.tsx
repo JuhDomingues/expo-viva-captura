@@ -42,11 +42,11 @@ const ThankYouPage = () => {
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Entre para o Grupo VIP Exclusivo!
+              Entre no Grupo VIP e Resgate Seu Desconto!
             </h2>
-            
+
             <p className="text-lg text-muted-foreground mb-6">
-              Tenha acesso antecipado a conteúdos exclusivos, bônus especiais e uma comunidade engajada de líderes cristãos transformando suas plataformas digitais.
+              O link exclusivo com 60% de desconto na Viva Academy está disponível dentro do nosso grupo VIP. Entre agora e tenha acesso imediato!
             </p>
 
             {/* Benefits List */}
@@ -56,8 +56,8 @@ const ThankYouPage = () => {
                   <CheckCircle2 className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold">Acesso Prioritário</p>
-                  <p className="text-sm text-muted-foreground">Seja o primeiro a conhecer novos cursos e materiais</p>
+                  <p className="font-semibold">Link com 60% de Desconto</p>
+                  <p className="text-sm text-muted-foreground">Acesse o link exclusivo para garantir seu desconto na Viva Academy</p>
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ const ThankYouPage = () => {
                   <Users className="w-4 h-4 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-semibold">Comunidade Exclusiva</p>
-                  <p className="text-sm text-muted-foreground">Network com outros líderes e criadores de conteúdo</p>
+                  <p className="font-semibold">Suporte Direto</p>
+                  <p className="text-sm text-muted-foreground">Tire suas dúvidas sobre imigração e a plataforma</p>
                 </div>
               </div>
 
@@ -76,8 +76,8 @@ const ThankYouPage = () => {
                   <Sparkles className="w-4 h-4 text-accent" />
                 </div>
                 <div>
-                  <p className="font-semibold">Bônus Especiais</p>
-                  <p className="text-sm text-muted-foreground">Materiais extras e lives exclusivas para membros VIP</p>
+                  <p className="font-semibold">Conteúdos Exclusivos</p>
+                  <p className="text-sm text-muted-foreground">Materiais extras e dicas sobre o processo de imigração</p>
                 </div>
               </div>
             </div>
@@ -91,8 +91,11 @@ const ThankYouPage = () => {
               <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
 
-            <p className="text-xs text-center text-muted-foreground mt-4">
-              Você receberá o link da página de vendas e todos os detalhes no grupo VIP
+            <p className="text-sm text-center font-semibold text-primary mt-4">
+              ⚡ O link com 60% de desconto está fixado no grupo VIP!
+            </p>
+            <p className="text-xs text-center text-muted-foreground mt-2">
+              Entre agora e garanta seu acesso à Viva Academy com desconto exclusivo
             </p>
           </div>
         </Card>
