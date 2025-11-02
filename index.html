@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/src/assets/iconAsset 2.webp" />
+    <title>Viva Academy - 60% OFF | Podcast Balaio</title>
+    <meta name="description" content="Aprenda tudo sobre imigração para os Estados Unidos com 60% de desconto na Viva Academy!" />
+    <meta name="author" content="Viva Academy & Podcast Balaio" />
+
+    <meta property="og:title" content="Viva Academy - 60% OFF | Podcast Balaio" />
+    <meta property="og:description" content="Aprenda tudo sobre imigração para os Estados Unidos com 60% de desconto na Viva Academy!" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      /** Mautic Form SDK **/
+      if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://mkt.vivaacademy.co/media/js/mautic-form.js?v595b035a';
+        script.onload = function() {
+          MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://mkt.vivaacademy.co';
+        var MauticLang = {
+          'submittingMessage': "Por favor, aguarde..."
+        }
+      } else if (typeof MauticSDK != 'undefined') {
+        MauticSDK.onLoad();
+      }
+    </script>
+  </body>
+</html>
