@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import balaioLogo from "@/assets/Logo Balaio.png";
 import vivaLogo from "@/assets/Logo Viva Academy.png";
+import bgHeroImage from "@/assets/BG pc expo crista.png";
 import { Sparkles, Gift, Users, CheckCircle2, Star } from "lucide-react";
 
 const LandingPage = () => {
@@ -26,8 +27,15 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 animate-pulse" />
+      <section className="relative overflow-hidden min-h-screen flex items-center">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${bgHeroImage})` }}
+        />
+
+        {/* Gradient Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
         {/* USA Flag themed decorative elements */}
         <div className="absolute top-20 left-10 w-16 h-16 bg-[#B22234]/20 rounded-full blur-xl animate-pulse" />
@@ -53,16 +61,16 @@ const LandingPage = () => {
 
           {/* Main Content */}
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full mb-6 animate-bounce">
-              <Sparkles className="w-5 h-5 text-accent" />
-              <span className="font-bold text-accent-foreground">Oferta Exclusiva</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/90 rounded-full mb-6 animate-bounce">
+              <Sparkles className="w-5 h-5 text-white" />
+              <span className="font-bold text-white">Oferta Exclusiva</span>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-white leading-tight drop-shadow-2xl">
               Seu Caminho para os EUA 🇺🇸 Começa Aqui!
             </h1>
-            
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-2xl mx-auto">
+
+            <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-2xl mx-auto drop-shadow-lg">
               Aprenda tudo sobre imigração para os Estados Unidos com 60% de desconto na Viva Academy!
             </p>
 
