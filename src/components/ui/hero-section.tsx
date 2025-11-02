@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { VolumeX, Volume2 } from "lucide-react";
 import { useState, useRef } from "react";
 import { trackPixelEvent, FacebookPixelEvents } from "@/lib/facebook-pixel";
+import cidadeImage from "@/assets/Cidade.jpeg";
 
 interface HeroSectionProps {
   onCTAClick: () => void;
@@ -14,10 +15,10 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
   const toggleMute = () => {
     if (iframeRef.current && isMuted) {
       const iframe = iframeRef.current;
-      
+
       // Restart video with sound on
       iframe.src = "https://www.youtube.com/embed/t68Rw8nl-A0?start=0&autoplay=1&mute=0&controls=0&rel=0&modestbranding=1&loop=1&playlist=t68Rw8nl-A0";
-      
+
       setIsMuted(false);
     }
   };
@@ -25,8 +26,8 @@ export const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen bg-black flex items-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-           style={{ backgroundImage: 'url(/Cidade.jpeg)' }}></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+           style={{ backgroundImage: `url(${cidadeImage})` }}></div>
       
       {/* Professional overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50"></div>

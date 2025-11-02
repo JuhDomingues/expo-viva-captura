@@ -6,6 +6,7 @@ export enum FacebookPixelEvents {
   VIEW_CONTENT = 'ViewContent',
   ADD_TO_CART = 'AddToCart',
   PURCHASE = 'Purchase',
+  LEAD = 'Lead',
 }
 
 interface PixelEventData {
