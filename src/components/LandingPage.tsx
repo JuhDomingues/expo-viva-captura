@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import balaioLogo from "@/assets/Logo Balaio.png";
 import vivaLogo from "@/assets/Logo Viva Academy.png";
-import { Sparkles, Gift, Users, CheckCircle2 } from "lucide-react";
+import { Sparkles, Gift, Users, CheckCircle2, Star } from "lucide-react";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -28,7 +28,13 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 animate-pulse" />
-        
+
+        {/* USA Flag themed decorative elements */}
+        <div className="absolute top-20 left-10 w-16 h-16 bg-[#B22234]/20 rounded-full blur-xl animate-pulse" />
+        <div className="absolute top-40 right-20 w-20 h-20 bg-[#3C3B6E]/20 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-40 left-1/4 w-12 h-12 bg-[#B22234]/20 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-20 right-1/3 w-24 h-24 bg-[#3C3B6E]/20 rounded-full blur-xl animate-pulse" />
+
         <div className="container relative mx-auto px-4 py-12 md:py-20">
           {/* Logos */}
           <div className="flex flex-row items-center justify-center gap-4 md:gap-8 mb-12">
@@ -53,12 +59,21 @@ const LandingPage = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
-              Seu Caminho para os EUA Começa Aqui!
+              Seu Caminho para os EUA 🇺🇸 Começa Aqui!
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-2xl mx-auto">
               Aprenda tudo sobre imigração para os Estados Unidos com 60% de desconto na Viva Academy!
             </p>
+
+            {/* USA Stars decoration */}
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <Star className="w-5 h-5 text-[#B22234] fill-[#B22234]" />
+              <Star className="w-5 h-5 text-[#3C3B6E] fill-[#3C3B6E]" />
+              <Star className="w-5 h-5 text-[#B22234] fill-[#B22234]" />
+              <Star className="w-5 h-5 text-[#3C3B6E] fill-[#3C3B6E]" />
+              <Star className="w-5 h-5 text-[#B22234] fill-[#B22234]" />
+            </div>
 
             {/* Discount Badge */}
             <div className="relative inline-block mb-12">
