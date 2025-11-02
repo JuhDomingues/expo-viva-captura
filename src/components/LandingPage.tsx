@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import balaioLogo from "@/assets/Logo Balaio.png";
-import vivaLogo from "@/assets/Logo Viva Academy.png";
+import vivaLogo from "@/assets/Asset 1.png";
 import bgHeroImage from "@/assets/BG pc expo crista.png";
 import { Sparkles, Gift, Users, CheckCircle2, Star } from "lucide-react";
 
@@ -27,7 +27,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center">
+      <section className="relative overflow-hidden min-h-[60vh] flex items-center">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -60,7 +60,7 @@ const LandingPage = () => {
           </div>
 
           {/* Main Content */}
-          <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/90 rounded-full mb-6 animate-bounce">
               <Sparkles className="w-5 h-5 text-white" />
               <span className="font-bold text-white">Oferta Exclusiva</span>
@@ -70,9 +70,48 @@ const LandingPage = () => {
               Seu Caminho para os EUA 🇺🇸 Começa Aqui!
             </h1>
 
-            <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-2xl mx-auto drop-shadow-lg">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-lg">
               Aprenda tudo sobre imigração para os Estados Unidos com 60% de desconto na Viva Academy!
             </p>
+
+            {/* Video Section */}
+            <div className="max-w-4xl mx-auto mb-8">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-black/30">
+                <video
+                  className="w-full h-auto min-h-[300px]"
+                  controls
+                  controlsList="nodownload"
+                  preload="metadata"
+                  playsInline
+                  style={{ maxHeight: '600px' }}
+                >
+                  <source
+                    src="https://er5wonitjml5hkli.public.blob.vercel-storage.com/VIVA%20ACADEMY%20ENTREVISTA1m251025%20%281%29.mov"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://er5wonitjml5hkli.public.blob.vercel-storage.com/VIVA%20ACADEMY%20ENTREVISTA1m251025%20%281%29.mov"
+                    type="video/quicktime"
+                  />
+                  <p className="text-white p-8 text-center">
+                    Seu navegador não suporta reprodução de vídeo.
+                    <a href="https://er5wonitjml5hkli.public.blob.vercel-storage.com/VIVA%20ACADEMY%20ENTREVISTA1m251025%20%281%29.mov"
+                       className="text-primary underline ml-2"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      Clique aqui para assistir
+                    </a>
+                  </p>
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="container mx-auto px-4 py-12 md:py-20">
+        <div className="max-w-4xl mx-auto text-center mb-12">
 
             {/* USA Stars decoration */}
             <div className="flex items-center justify-center gap-2 mb-8">
@@ -176,7 +215,6 @@ const LandingPage = () => {
               Ao se cadastrar, você concorda em receber comunicações sobre ofertas especiais.
             </p>
           </Card>
-        </div>
       </section>
     </div>
   );
